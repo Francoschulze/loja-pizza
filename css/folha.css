@@ -1,0 +1,82 @@
+/* Site em caixas */
+* {
+    box-sizing: border-box;
+}
+
+/* Ajustes em todo o site */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: red;
+}
+
+.header {
+    font-size: clamp(5em, 1em + 1vw, 1.5em);
+    color: white;
+    text-shadow: black 4px 2px;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: 105% auto;
+    background-image: url("https://i.ibb.co/pdS9GwP/pizza.jpg");
+    min-height: 90%;
+}
+
+.cardapio {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.listas {
+    list-style-type: none;
+}
+
+.listas li {
+    font-size: 1.5em;
+}
+
+.preço {
+    float: right;
+    color: #fff!important;
+    background-color: #616161!important;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+    .topnav a {
+		float: none;
+		width: 100%;
+    }
+}
